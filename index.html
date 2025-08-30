@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FOR U - A WEB</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-white font-sans text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-black text-white sticky top-0 z-30">
+    <div class="font-semibold text-lg select-none">A Web</div>
+    <ul class="hidden sm:flex space-x-6 text-sm font-semibold">
+      <li><a href="#images" class="hover:underline">Main</a></li>
+      <li><a href="#wishes" class="hover:underline">Wish</a></li>
+      <li><a href="#footer" class="hover:underline">Words</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-[#ec82d7] min-h-[320px] flex flex-col items-center justify-center px-6 py-20 gap-6 overflow-hidden text-center">
+    <h1 class="text-white font-extrabold text-5xl md:text-6xl leading-tight select-none">HAPPY 20TH BIRTHDAY ANYA</h1>
+    <p class="text-white text-lg md:text-xl select-none">Click on the images below to visit Somewhere:</p>
+  </section>
+
+  <!-- Wave divider -->
+  <div class="wave-divider bg-[#ec82d7] relative">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path fill="#fcd14a" fill-opacity="1" d="M0 80C60 20 180 70 300 60C420 50 540 0 720 10C900 20 1020 80 1140 60C1260 40 1380 5 1440 20L1440 80L0 80Z"/>
+    </svg>
+  </div>
+
+  <!-- Images Section -->
+  <section id="images" class="bg-[#fcd14a] px-6 py-20 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 max-w-5xl mx-auto">
+      <!-- Image 1 -->
+      <div class="card p-4 flex flex-col items-center space-y-4">
+        <a href="https://yeah-2.vercel.app/" target="_blank" class="block w-full">
+          <img src="img/roti1.jpg" alt="Example Image 1" class="w-full h-auto rounded-lg shadow-md hover:brightness-110 transition" />
+        </a>
+        <p class="text-black font-semibold select-none">touch me</p>
+      </div>
+      <!-- Image 2 -->
+      <div class="card p-4 flex flex-col items-center space-y-4">
+        <a href="https://yeah-3.vercel.app/" target="_blank" class="block w-full">
+          <img src="img/box.jpg" alt="Example Image 2" class="w-full h-auto rounded-lg shadow-md hover:brightness-110 transition" />
+        </a>
+        <p class="text-black font-semibold select-none">touch me</p>
+      </div>
+      <!-- Image 3 -->
+      <div class="card p-4 flex flex-col items-center space-y-4">
+        <a href="https://hbdone.vercel.app/" target="_blank" class="block w-full">
+          <img src="img/pesta.jpg" alt="Example Image 3" class="w-full h-auto rounded-lg shadow-md hover:brightness-110 transition" />
+        </a>
+        <p class="text-black font-semibold select-none">touch me</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ucapan Harapan Section with Slider and Random Quote -->
+  <section id="wishes" class="bg-white px-6 py-20 max-w-7xl mx-auto space-y-16">
+    <h2 class="text-4xl font-extrabold text-center select-none text-[#ec82d7]">Wish For You</h2>
+    <div class="max-w-4xl mx-auto space-y-8">
+      <!-- Ucapan Text -->
+      <div class="bg-[#fcd14a] rounded-lg p-8 shadow-lg text-center text-lg font-semibold select-text">
+        <p>Happy 20th birthday, Dianya Putri Kinanti Agung.The older you grow, the brighter you shine. May every step you take be guided by the light of hope, and may every prayer turn into a path toward happiness</p>
+      </div>
+
+      <!-- Slider -->
+      <div class="slider relative max-w-full mx-auto">
+        <div class="slides flex">
+          <img src="img/hiasan1.jpg" alt="Hiasan 1" class="slide aspect-square object-cover w-full rounded-lg" />
+          <img src="img/hiasan2.jpg" alt="Hiasan 2" class="slide aspect-square object-cover w-full rounded-lg" />
+          <img src="img/hiasan3.jpg" alt="Hiasan 3" class="slide aspect-square object-cover w-full rounded-lg" />
+          <img src="img/hiasan4.jpg" alt="Hiasan 4" class="slide aspect-square object-cover w-full rounded-lg" />
+          <img src="img/image5.jpg" alt="Hiasan 1" class="slide aspect-square object-cover w-full rounded-lg" />
+          <img src="img/image6.jpg" alt="Hiasan 2" class="slide aspect-square object-cover w-full rounded-lg" />
+          <img src="img/image7.jpg" alt="Hiasan 3" class="slide aspect-square object-cover w-full rounded-lg" />
+          <img src="img/image8.jpg" alt="Hiasan 4" class="slide aspect-square object-cover w-full rounded-lg" />
+          <img src="img/image9.jpg" alt="Hiasan 4" class="slide aspect-square object-cover w-full rounded-lg" />
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="nav-btn left" aria-label="Previous Slide" id="prevBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="nav-btn right" aria-label="Next Slide" id="nextBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Random Quote Section -->
+      <div class="bg-[#fcd14a] rounded-lg p-8 shadow-lg text-center max-w-3xl mx-auto select-text">
+        <p id="quoteText" class="text-xl italic font-semibold text-gray-800 mb-4"></p>
+        <button id="newQuoteBtn" class="bg-[#ec82d7] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#d06ac1] transition select-none">
+          Click Me
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-[#fcd14a] px-6 py-12 max-w-7xl mx-auto text-center font-bold text-xl select-none">
+    &copy; 2025 by F. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

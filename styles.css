@@ -1,0 +1,75 @@
+/* Custom wavy divider */
+.wave-divider {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: -5px;
+}
+.wave-divider svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Card shadows and styling */
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 0.3s ease;
+  border: 1.5px solid #ddddef;
+}
+.card:hover {
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.1),
+    0 6px 6px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
+}
+/* Prevent text selection on buttons */
+button, a.button-like {
+  user-select: none;
+}
+/* Slider styles */
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  min-width: 100%;
+  user-select: none;
+}
+/* Navigation buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  user-select: none;
+  z-index: 10;
+}
+.nav-btn:hover {
+  background-color: rgba(255,255,255,0.95);
+}
+.nav-btn.left {
+  left: 1rem;
+}
+.nav-btn.right {
+  right: 1rem;
+}
